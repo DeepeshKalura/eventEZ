@@ -1,0 +1,12 @@
+{
+    "audience": [
+      { "name": "18+" },
+      { "name": "21+" },
+      { "name": "Dog-Friendly" },
+      { "name": "Family-Friendly" },
+      { "name": "LGBTQIA+" },
+      { "name": "Seniors" },
+      { "name": "Young Adults" }
+    ]
+}
+  
