@@ -1,6 +1,4 @@
-
 import React, { useState } from "react";
-
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
@@ -19,6 +17,7 @@ import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  
   const menuOptions = [
     {
       text: "Home",
@@ -33,21 +32,33 @@ const Navbar = () => {
       icon: <CommentRoundedIcon />,
     },
     {
+      text: "Plan Your Trip",
+      submenus: [
+        "18+",
+        "21+",
+        "Dog-Friendly",
+        "Family-Friendly",
+        "LGBTQIA+",
+        "Seniors",
+        "Young Adults"
+      ],
+    },
+    {
       text: "Contact",
       icon: <PhoneRoundedIcon />,
     },
-    
   ];
   return (
     <nav>
       <div className="nav-logo-container">
-        <img src=" "alt="" />
+        <img src=" " alt="" />
       </div>
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact</a>
+        {menuOptions.map((item) => (
+          <a href="" key={item.text}>
+            {item.text}
+          </a>
+        ))}
         <a href="">
           <BsCart2 className="navbar-cart-icon" />
         </a>
