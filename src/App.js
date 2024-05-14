@@ -8,7 +8,9 @@ function App() {
     <>
      <div className="App ">
       <Navbar/>
+      <div className="px-16 py-6">
       <Outlet />
+      </div>
       <Footer />
     </div>
     </>

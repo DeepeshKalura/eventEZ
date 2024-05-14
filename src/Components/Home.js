@@ -1,5 +1,5 @@
 import React from "react";
-import BannerBackground from "../Assets/home-banner-background.png";
+import BannerBackground from "../Assets/about-background.png";
 import BannerImage from "../Assets/home-banner-image.png";
 import { FiArrowRight } from "react-icons/fi";
 import About from "./About";
@@ -11,8 +11,8 @@ const Home = () => {
     <>
       <div className="home-container">
         <div className="home-banner-container">
-          <div className="home-bannerImage-container">
-            <img src={BannerBackground} alt="" />
+          <div className="home-bannerImage-container pt-4">
+            <img src={BannerBackground} alt="" className="rotate-180 "/>
           </div>
           <div className="home-text-section">
             <h1 className="primary-heading">EVENTS</h1>

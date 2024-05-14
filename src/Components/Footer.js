@@ -7,38 +7,20 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="footer-wrapper bg-[#F6E2C0]">
-      <div className="footer-section-one">
-        <div className="footer-logo-container">
-          <img src=" "alt="" />
+    <div className="">
+      <footer className=" w-full  mt-4 border border-gray-200  bg-[#F6E2C0]  z-50 flex justify-between items-center px-10 py-2 ">
+        <div className="container m-3 mx-auto py-4 px-6 flex justify-between items-center">
+          <div>
+            <p className="text-sm">
+              &copy; Try Valley 2024. All rights reserved{" "}
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <h1 className="text-sm mr-4 underline">Terms and Conditions</h1>
+            <h2 className="text-sm underline">Privacy Policy</h2>
+          </div>
         </div>
-        <div className="footer-icons flex flex-wrap">
-          <BsTwitter />
-          <SiLinkedin />
-          <BsYoutube />
-          <FaFacebookF />
-        </div>
-      </div>
-      <div className="footer-section-two">
-        <div className="footer-section-columns">
-          <span>Qualtiy</span>
-          <span>Help</span>
-          <span>Share</span>
-          <span>Carrers</span>
-          <span>Testimonials</span>
-          
-        </div>
-        <div className="footer-section-columns">
-          <span>244-5333-7783</span>
-          <span>hello@hello.com</span>
-          <span>press@hello.com</span>
-          <span>contact@hello.com</span>
-        </div>
-        <div className="footer-section-columns">
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
-        </div>
-      </div>
+      </footer>
     </div>
   );
 };

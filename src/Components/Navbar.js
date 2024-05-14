@@ -52,7 +52,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="bg-[#F6E2C0]">
+    <nav className="w-full  border border-gray-200 bg-[#F6E2C0] py-4 z-50 mb-4">
       <div className="nav-logo-container">
         <img src=" " alt="" />
       </div>
