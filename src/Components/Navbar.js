@@ -16,6 +16,7 @@ import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import LuggageIcon from "@mui/icons-material/Luggage";
 import { Link } from "react-router-dom";
+import logo from "../Assets/tryvalleylogo.png"
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -33,19 +34,7 @@ const Navbar = () => {
       text: "Testimonials",
       icon: <CommentRoundedIcon />,
     },
-    {
-      text: "Plan Your Trip",
-      icon: <LuggageIcon />,
-      submenus: [
-        "18+",
-        "21+",
-        "Dog-Friendly",
-        "Family-Friendly",
-        "LGBTQIA+",
-        "Seniors",
-        "Young Adults",
-      ],
-    },
+   
     {
       text: "Contact",
       icon: <PhoneRoundedIcon />,
@@ -53,8 +42,8 @@ const Navbar = () => {
   ];
   return (
     <nav className="w-full  border border-gray-200 bg-[#F6E2C0] py-4 z-50 mb-4">
-      <div className="nav-logo-container">
-        <img src=" " alt="" />
+      <div className="nav-logo-container w-16 mx-8 text-8xl">
+        <img src={logo} alt="" />
       </div>
       <div className="navbar-links-container">
         <ul className="flex flex-wrap  items-center">
@@ -62,21 +51,18 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/">About</Link>
+          <a href="#about">About</a>
           </li>
 
           <li>
-            <Link to="/events">Events</Link>
+           <a href="#testimonial">Testimonials</a>
           </li>
           <li>
-            <Link to="/plan-your-trip">Plan Your Trip</Link>
+            <a href="#contact">Contact</a>
           </li>
           <li>
-            <Link to="/">Contact</Link>
-          </li>
-          <li>
-            <Link to="/bookings">
-              <button className="primary-button">Bookings Now</button>
+            <Link to="/events">
+              <button className="primary-button">Go to Events</button>
             </Link>
           </li>
         </ul>
