@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="footer-logo-container">
           <img src=" "alt="" />
         </div>
-        <div className="footer-icons">
+        <div className="footer-icons flex flex-wrap">
           <BsTwitter />
           <SiLinkedin />
           <BsYoutube />

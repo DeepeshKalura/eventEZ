@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "name": "Imagination Expressed 2024",
+    "host": "Museum on Main",
+    "address": "603 Main Street, Pleasanton, CA 94566",
+    "description": "Our annual collaboration with PAL showcases the latest works from talented local artists. The exhibit displays works in a wide variety of media including painting, watercolor, colored pencil, photography, printing, ceramics, painted porcelain, and jewelry.",
+    "image": "/images/event1.jpg",
+    "timeline": {
+      "start": "March 14, 2024",
+      "end": "May 11, 2024"
+    },
+    "event_type": ["GALLERIES & EXHIBITIONS", "ARTS & CULTURE"],
+    "audience": ["FAMILY-FRIENDLY"],
+    "topic": ["ARTS & CULTURE"],
+    "website": "https://www.museumonmain.org/",
+    "price": "FREE"
+  },
+
+  {
+    "id": 2,
+    "name": "Winnie the Pooh KIDS",
+    "host": "Amador Theater",
+    "address": "1155 Santa Rita Rd., Pleasanton, CA 94566",
+    "description": "The Pleasanton Youth Theater Company is proud to present Disney’s Winnie the Pooh KIDS - a delightful show based on the beloved characters of A.A. Milne and the 2011 Disney animated feature film. Featuring favorite songs from the film, as well as new hits by the Academy Award-winning Robert ",
+    "image": "/images/event2.jpg",
+    "timeline": {
+      "start": "May 12, 2024",
+      "end": "May 13, 2024"
+    },
+    "event_type": ["CONCERTS & PERFORMANCES", "ARTS & CULTURE", "Live Music"],
+    "audience": ["FAMILY-FRIENDLY"],
+    "topic": ["ARTS & CULTURE"],
+    "website": "https://www.firehousearts.org/calendar-event/pleasanton-youth-theater-company-winnie-the-pooh-kids/",
+    "price": "10"
+  },
+
+  {
+    "id": 3,
+    "name": "Live Music at Dust Bowl Brewing Co",
+    "host": "Dust Bowl Brewing Co",
+    "address": "3034 W. Jack London Blvd. Livermore, CA 94551",
+    "description": "Live music from Maddy Hudson! Get ready to experience the soulful melodies and captivating lyrics of Maddy Hudson as she takes the stage for an unforgettable live music performance! With her dynamic voice and heartfelt performances, Maddy effortlessly weaves together elements of folk, pop, and blues, creating a unique.",
+    "image": "/images/event3.jpg",
+    "timeline": {
+      "start": "May 12, 2024",
+      "end": "May 12, 2024"
+    },
+
+    "event_type": [
+      "CONCERTS & PERFORMANCES",
+      "Live Music",
+      "Food Drinks",
+      "Brewey",
+      "Bar/Restaurant Events"
+    ],
+    "audience": ["DOG-Friendly", "FAMILY-FRIENDLY"],
+    "topic": ["MUSIC", "FOOD & DRINK"],
+    "website": "https://dustbowlbrewing.com/",
+    "price": "FREE"
+  },
+
+  {
+    "id": 4,
+    "name": "Mother’s Day Wine, Brunch & Bouquets!",
+    "host": "Livermore Valley Wine Community",
+    "address": "29 S. Livermore Ave., Livermore, CA 94550",
+    "description": "Celebrate Mother’s Day in the Livermore Valley Wine Country! Treat Mom to a special day of wine tasting, brunch and a beautiful bouquet of flowers. Each ticket includes a wine tasting flight at each of the participating wineries, a delicious brunch and a beautiful bouquet of flowers. Tickets are $55 per person and include wine tasting at each of the participating wineries, brunch and a bouquet of flowers.",
+    "image": "/images/event4.jpg",
+    "timeline": {
+      "start": "May 12, 2024",
+      "end": "May 12, 2024"
+    },
+    "event_type": ["FOOD & DRINK", "Holiday Events", "Winery"],
+    "audience": ["21+"],
+    "topic": ["Seasonal & Holiday"],
+    "website": "https://www.livermorewinetrolley.com/portfolio/mothers-day-wine-tour/",
+    "price": "155"
+  },
+
+  {
+    "id": 5,
+    "name": "Tacos & Trivia at BottleTaps",
+    "host": "BottleTaps",
+    "address": "3020 Bernal Ave. Suite 160, Pleasanton, CA",
+    "description": "Put your knowledge to the test and join us at BottleTaps for an evening of Trivia and Tacos! Can't get a babysitter? No problem! We are a family friendly establishment, so pack up the family and head on over. Don't want to leave the dog at home? We allow dogs on the patio so Fluffy can enjoy a bowl of water while you enjoy some of our delicious tacos! We have prizes for the 1st, 2nd and 3rd place trivia winners. We recommend that parties of 6 or more call ahead of time for a reservation.\n\nWith 30 beers, meads, ciders and kombuchas on tap, and a rotating menu of tacos, BottleTaps is your to-go spot for tacos AND trivia on Tuesday! Cheers!",
+    "image": "/images/event5.jpg",
+    "timeline": {
+      "start": "May 14, 2024",
+      "end": "May 14, 2024"
+    },
+    "event_type": ["Bar/Restaurant Events", "Trivia"],
+    "audience": ["FAMILY-FRIENDLY", "Young Adults", "LGBTQIA+", "Seniors"],
+    "topic": ["Pleasation"],
+    "website": "https://fb.me/e/393mWo2kX",
+    "price": "FREE"
+  },
+
+  {
+    "id": 6,
+    "name": "Acoustic Wednesday",
+    "host": "Wood Family Vineyards",
+    "address": "2407 Research Drive, Livermore",
+    "description": "Join us for Acoustic Wednesday with live music by Matt Finders and Friends. Enjoy a glass of wine and relax in our beautiful tasting room or on our patio. We have a great selection of wines to choose from and a beautiful view of the vineyards. We also have a food truck on site from 5-8pm. Come out and enjoy the evening with us!",
+    "image": "/images/event6.jpg",
+    "timeline": {
+      "start": "May 15, 2024",
+      "end": "May 13, 2024"
+    },
+    "event_type": [
+      "CONCERTS & PERFORMANCES",
+      "Live Music",
+      "Food Drinks",
+      "Winery"
+    ],
+    "audience": ["DOG-Friendly", "FAMILY-FRIENDLY", "21+"],
+    "topic": ["ARTS & CULTURE"],
+    "website": "https://woodfamilyvineyards.com/schedule-a-tasting/",
+    "price": "FREE"
+  }
+]

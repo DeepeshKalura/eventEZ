@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Reem Kufi", sans-serif !important;
+  background-color: #F6E2C0;
 }
 img {
   max-width: 100%;
@@ -232,7 +233,6 @@ nav {
 }
 .testimonial-section-bottom {
   margin-top: 2rem;
-  background-color: white;
   padding: 1.5rem 2rem;
   display: flex;
   align-items: center;

@@ -14,11 +14,12 @@ import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
-import LuggageIcon from '@mui/icons-material/Luggage';
+import LuggageIcon from "@mui/icons-material/Luggage";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  
+
   const menuOptions = [
     {
       text: "Home",
@@ -42,7 +43,7 @@ const Navbar = () => {
         "Family-Friendly",
         "LGBTQIA+",
         "Seniors",
-        "Young Adults"
+        "Young Adults",
       ],
     },
     {
@@ -56,12 +57,29 @@ const Navbar = () => {
         <img src=" " alt="" />
       </div>
       <div className="navbar-links-container">
-        {menuOptions.map((item) => (
-          <a href="" key={item.text}>
-            {item.text}
-          </a>
-        ))}
-        <button className="primary-button">Bookings Now</button>
+        <ul className="flex flex-wrap  items-center">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/">About</Link>
+          </li>
+
+          <li>
+            <Link to="/events">Events</Link>
+          </li>
+          <li>
+            <Link to="/plan-your-trip">Plan Your Trip</Link>
+          </li>
+          <li>
+            <Link to="/">Contact</Link>
+          </li>
+          <li>
+            <Link to="/bookings">
+              <button className="primary-button">Bookings Now</button>
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
