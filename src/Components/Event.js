@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import BannerImage from "../Assets/home-banner-background.png";
 
 const Event = ({ props }) => {
   const [expandedMap, setExpandedMap] = useState({});
@@ -22,15 +21,15 @@ const Event = ({ props }) => {
       {props.map((event) => (
         <div
           key={event.id}
-          className="max-w-sm border border-gray-200 rounded-lg  shadow relative transition duration-300 ease-in-out transform hover:scale-105"
+          className="max-w-sm border border-gray-200 rounded-lg shadow relative transition duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200 hover:cursor-pointer"
         >
-          <a href="#">
+          <div>
             <img
               className="rounded-t-lg"
               src={require(`../data${event.image}`)}
               alt=""
             />
-          </a>
+          </div>
           <div className="p-5">
             <a href="#">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
@@ -45,19 +44,18 @@ const Event = ({ props }) => {
                 : event.description}
 
               <div className="flex flex-wrap justify-between items-center">
-                <span className="text-gray-800">
+                <span className="text-gray-800 font-bold">
                   Start Date: {event.timeline.start}
                 </span>
-                <span className="text-gray-800">
+                <span className="text-gray-800 font ">
                   End Date: {event.timeline.end}
                 </span>
               </div>
             </p>
 
-            <div className="absolute bottom-1 ">
+            <div className="absolute bottom-1">
               {!expandedMap[event.id] ? (
-                <a
-                  href="#"
+                <button
                   onClick={() => toggleExpanded(event.id)}
                   className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-300"
                 >
@@ -77,10 +75,9 @@ const Event = ({ props }) => {
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
-                </a>
+                </button>
               ) : (
-                <a
-                  href="#"
+                <button
                   onClick={() => toggleExpanded(event.id)}
                   className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
                 >
@@ -100,7 +97,7 @@ const Event = ({ props }) => {
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
-                </a>
+                </button>
               )}
             </div>
           </div>
