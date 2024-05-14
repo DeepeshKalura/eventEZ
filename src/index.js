@@ -7,6 +7,7 @@ import PlanYourTrip from "./Components/PlanYourTrip.js";
 import Home from "./Components/Home.js";
 import Event from "./Components/Event.js";
 import eventData from "./data/events.json";
+import EventPlannerAi from "./Components/EventPlannerAi.js";
 
 const appRouter = createBrowserRouter([
   {
@@ -23,9 +24,13 @@ const appRouter = createBrowserRouter([
       },
       {
         path:"/plan-your-trip",
-        element:<PlanYourTrip/>
-      }
-        
+        element:<EventPlannerAi/>
+      },
+      {
+        path: "events/:eventId",
+        element: <EventPlannerAi/>,
+      },
+      
     ],
   },
 ]);

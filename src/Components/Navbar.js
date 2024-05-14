@@ -52,7 +52,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav>
+    <nav className="bg-[#F6E2C0]">
       <div className="nav-logo-container">
         <img src=" " alt="" />
       </div>
