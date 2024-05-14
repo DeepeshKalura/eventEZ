@@ -14,6 +14,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import LuggageIcon from '@mui/icons-material/Luggage';
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -33,6 +34,7 @@ const Navbar = () => {
     },
     {
       text: "Plan Your Trip",
+      icon: <LuggageIcon />,
       submenus: [
         "18+",
         "21+",
@@ -59,9 +61,6 @@ const Navbar = () => {
             {item.text}
           </a>
         ))}
-        <a href="">
-          <BsCart2 className="navbar-cart-icon" />
-        </a>
         <button className="primary-button">Bookings Now</button>
       </div>
       <div className="navbar-menu-container">
