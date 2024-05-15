@@ -6,7 +6,7 @@ import Navbar from "./Components/Navbar.js";
 function App() {
   return (
     <>
-     <div className="App ">
+     <div className="App flex flex-col">
       <Navbar/>
       <div className="px-16 py-6">
       <Outlet />

@@ -7,8 +7,8 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="">
-      <footer className=" w-full  mt-4 border border-gray-200  bg-[#F6E2C0]  z-50 flex justify-between items-center px-10 py-2 ">
+    <>
+      <footer className=" mt-auto w-full border border-gray-200  bg-[#F6E2C0]  z-50 flex justify-between items-center px-10 py-2 ">
         <div className="container m-3 mx-auto py-4 px-6 flex justify-between items-center">
           <div>
             <p className="text-sm">
@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 };
 

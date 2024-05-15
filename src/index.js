@@ -24,7 +24,7 @@ const appRouter = createBrowserRouter([
      
       {
         path: "events/:eventId",
-        element: <EventPlannerAi/>,
+        element: <EventPlannerAi props={eventData}/>,
       },
       
     ],
