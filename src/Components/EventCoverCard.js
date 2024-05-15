@@ -4,7 +4,7 @@ const EventCoverCard = ({ events, eventId }) => {
   console.log(events);
   return (
     <>
-      <div className="w-full relative border border-black ">
+      <div className="w-full relative">
         <div
           className="w-full absolute inset-0 bg-cover bg-repeat filter blur-sm"
           style={{

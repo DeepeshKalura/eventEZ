@@ -4,6 +4,7 @@ import axios from "axios"; // Make sure you have axios imported
 import EventCoverCard from "./EventCoverCard";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LinkIcon from "@mui/icons-material/Link";
+import GoogleMapsCard from "./GoogleMapsCard";
 
 const EventPlannerAi = ({ props }) => {
   const [budget, setBudget] = useState("");
@@ -169,7 +170,10 @@ const EventPlannerAi = ({ props }) => {
             </div>
           </div>
         </div>
+
       </div>
+      <GoogleMapsCard events={props} eventId={eventId} />
+     
     </>
   );
 };
