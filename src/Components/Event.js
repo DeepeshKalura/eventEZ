@@ -18,7 +18,7 @@ const Event = ({ props }) => {
   console.log(props);
 
   return (
-    <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6`}>
+    <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-16 my-6`}>
       {props.map((event) => (
         <div
           key={event.id}

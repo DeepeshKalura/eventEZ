@@ -9,7 +9,7 @@ import Testimonial from "./Testimonial";
 const Home = () => {
   return (
     <>
-      <div className="home-container">
+      <div className="home-container mx-16 my-6">
         <div className="home-banner-container">
           <div className="home-bannerImage-container pt-4">
             <img src={BannerBackground} alt="" className="rotate-180 "/>

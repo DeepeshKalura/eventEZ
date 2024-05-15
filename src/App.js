@@ -8,9 +8,9 @@ function App() {
     <>
      <div className="App flex flex-col">
       <Navbar/>
-      <div className="px-16 py-6">
+      
       <Outlet />
-      </div>
+    
       <Footer />
     </div>
     </>
