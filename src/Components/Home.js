@@ -5,6 +5,7 @@ import { FiArrowRight } from "react-icons/fi";
 import About from "./About";
 import Contact from "./Contact";
 import Testimonial from "./Testimonial";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -12,22 +13,22 @@ const Home = () => {
       <div className="home-container mx-16 my-6">
         <div className="home-banner-container">
           <div className="home-bannerImage-container pt-4">
-            <img src={BannerBackground} alt="" className="rotate-180 "/>
+            <img src={BannerBackground} alt="" className="rotate-180 " />
           </div>
           <div className="home-text-section">
             <h1 className="primary-heading">EVENTS</h1>
-            <p className="primary-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p className="primary-text text-bold">
+              Discover exciting events happening near you! <br />
+              Whether you're a culture enthusiast, a music lover, a foodie, or
+              an outdoor adventurer, there's something for everyone to discover
+              and enjoy.
             </p>
+            <Link to="/events">
             <button className="secondary-button">
-              <FiArrowRight />{" "}
+              {"Go to Events"}
+              <FiArrowRight />
             </button>
+            </Link>
           </div>
           <div className="home-image-section">
             <img src={BannerImage} alt="" />

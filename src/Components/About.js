@@ -14,16 +14,17 @@ const About = () => {
       </div>
       <div className="about-section-text-container">
         <p className="primary-subheading">About</p>
-        <h1 className="primary-heading">
-          Event Planner
-        </h1>
+        <h1 className="primary-heading">Event budget Planner</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+          The Budget Event Planner is a web application designed to help users
+          plan their events within a specified budget and time frame.
         </p>
         <p className="primary-text">
-          Non tincidunt magna non et elit. Dolor turpis molestie dui magnis
-          facilisis at fringilla quam.
+          The application allows users to input their budget and the duration of
+          their event in days. Based on these inputs, the application generates
+          a customized event plan that optimizes the allocation of the budget
+          across various aspects of the event, such as venue, food,
+          transportation, and activities.
         </p>
         <div className="about-buttons-container">
           <button className="secondary-button">Learn More</button>
