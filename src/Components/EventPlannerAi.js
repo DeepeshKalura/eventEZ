@@ -7,14 +7,14 @@ import LinkIcon from "@mui/icons-material/Link";
 import GoogleMapsCard from "./GoogleMapsCard";
 
 const EventPlannerAi = ({ props }) => {
-  const [budget, setBudget] = useState("");
-  const [timeToStay, setTimeToStay] = useState("");
+  const [budget, setBudget] = useState("5000");
+  const [timeToStay, setTimeToStay] = useState("2");
   const [generatedAnswer, setGeneratedAnswer] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const { eventId } = useParams();
   console.log(eventId);
-  props[eventId - 1].event_type.map((type) => console.log(type));
+  // props[eventId - 1].event_type.map((type) => console.log(type));
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -78,7 +78,10 @@ const EventPlannerAi = ({ props }) => {
                 <div className="">
                   <h3 className="text-sm flex py-4">Event Type</h3>
                   {props[eventId - 1].event_type.map((type) => (
-                    <div className="flex flex-cols mb-4  ">
+                    <div
+                      key={props[eventId - 1]}
+                      className="flex flex-cols mb-4  "
+                    >
                       <div className="text-[0.5rem] backdrop-blur-md bg-slate-300 rounded-md p-1">
                         {type}
                       </div>
@@ -90,7 +93,10 @@ const EventPlannerAi = ({ props }) => {
                 <div className="">
                   <h3 className="text-sm py-4">Audience</h3>
                   {props[eventId - 1].audience.map((type) => (
-                    <div className="flex flex-cols mb-4  ">
+                    <div
+                      key={props[eventId - 1]}
+                      className="flex flex-cols mb-4  "
+                    >
                       <div className="text-[0.5rem] backdrop-blur-md bg-slate-300 rounded-md p-1">
                         {type}
                       </div>
@@ -102,7 +108,10 @@ const EventPlannerAi = ({ props }) => {
                 <div className="">
                   <h3 className="text-sm py-4">Topic</h3>
                   {props[eventId - 1].topic.map((type) => (
-                    <div className="flex flex-cols mb-4">
+                    <div
+                      key={props[eventId - 1]}
+                      className="flex flex-cols mb-4"
+                    >
                       <div className="text-[0.5rem] backdrop-blur-md bg-slate-300 rounded-md p-1">
                         {type}
                       </div>
@@ -114,9 +123,9 @@ const EventPlannerAi = ({ props }) => {
           </div>
           <div id="generate-plan">
             <div className=" block sm:flex justify-between  mt-2 p-2 gap-2 ">
-              <div className="flex flex-col border border-gray-300 shadow-md rounded-lg p-2">
-                <h2 className="text-xl my-6">GENERATE PLAN</h2>
-                <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="flex flex-col border border-gray-300 shadow-md rounded-lg p-2 mb-2">
+                <h2 className="text-xl mt-0 mb-1">GENERATE PLAN</h2>
+                <form onSubmit={handleSubmit} className="space-y-2">
                   <div className="flex items-center space-x-2">
                     <label className="whitespace-nowrap text-gray-600">
                       Budget[$]:
@@ -170,10 +179,8 @@ const EventPlannerAi = ({ props }) => {
             </div>
           </div>
         </div>
-
       </div>
       <GoogleMapsCard events={props} eventId={eventId} />
-     
     </>
   );
 };
