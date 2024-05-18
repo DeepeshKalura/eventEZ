@@ -41,7 +41,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="w-full  border border-gray-200 bg-[#F6E2C0] py-4 z-50">
+    <nav className="w-full  border border-gray-200  py-4 z-50">
       <div className="nav-logo-container w-16 mx-8 text-8xl">
         <img src={logo} alt="" />
       </div>
@@ -56,11 +56,9 @@ const Navbar = () => {
           </li>
 
           <li>
-           <a href="#testimonial">Testimonials</a>
+           <a href="#our-team">Our Team</a>
           </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+         
           <li>
             <Link to="/events">
               <button className="primary-button">Go to Events</button>
