@@ -41,14 +41,15 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="w-full  border border-gray-200 bg-[#F6E2C0] py-4 z-50 mb-4">
+    <nav className="w-full  border border-gray-200 bg-[#F6E2C0] py-4 z-50">
       <div className="nav-logo-container w-16 mx-8 text-8xl">
         <img src={logo} alt="" />
       </div>
       <div className="navbar-links-container">
-        <ul className="flex flex-wrap  items-center">
+        <ul className="flex flex-wrap  items-center ">
           <li>
-            <Link to="/">Home</Link>
+            <Link 
+            to="/" >Home</Link>
           </li>
           <li>
           <a href="#about">About</a>
