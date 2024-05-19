@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="about-section-container gap-0" id="about">
-      <div className="w-7/12 flex pl-32 rounded-lg">
+      <div className="w-7/12 flex mt-32 pl-32 rounded-lg">
         <video
           className=" w-10/12 h-fit justify-center rounded-lg"
           src={video}
