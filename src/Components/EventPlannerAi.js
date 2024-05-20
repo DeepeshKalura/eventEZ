@@ -3,7 +3,6 @@ import axios from "axios";
 import EventCoverCard from "./EventCoverCard";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LinkIcon from "@mui/icons-material/Link";
-import GoogleMapsCard from "./GoogleMapsCard";
 import ReactMarkdown from "react-markdown";
 import React, { useState, useCallback, useEffect } from "react";
 import {
@@ -88,7 +87,7 @@ const EventPlannerAi = ({ props }) => {
   }, [handleGetLocation]);
 
   useEffect(() => {
-    if (userLocation && eventLocation) {
+    if (userLocation && eventLocation && window.google && window.google.maps) {
       // Calculate distance between two points using Haversine formula
       const R = 6371; // Radius of the Earth in kilometers
       const lat1 = userLocation.lat;
@@ -295,13 +294,31 @@ const EventPlannerAi = ({ props }) => {
                   </div>
                   <button
                     type="submit"
-                    className="secondary-button h-10 mx-auto sm:mx-0 bg-slate-300 text-black hover:bg-gray-500"
+                    className="secondary-button h-10 mx-auto sm:mx-0"
                   >
                     Generate Plan
                   </button>
+                  {generatedAnswer && (
+                    <div className=" flex justify-center">
+                      <div className="text-container text-center ">
+                        <h2 className="animated-text ">Enjoy </h2>
+                        <h2 className="animated-text">Your</h2>
+                        <h2 className="animated-text">Event</h2>
+                        <h2 className="animated-text">🎉</h2>
+                        <h2 className="animated-text"> best wishes✨</h2>
+                      </div>
+                    </div>
+                  )}
                 </form>
               </div>
               <div className="border border-gray-300 w-full shadow-md rounded-lg">
+                {!loading && !generatedAnswer && (
+                  <>
+                    <h2 className=" text-2xl flex justify-center items-center">Your personalized plan will appear here</h2>
+
+                   
+                  </>
+                )}
                 {loading && <p className="text-center mt-4 ">Loading...</p>}
                 {error && (
                   <p className="text-red-500 text-center mt-4">{error}</p>

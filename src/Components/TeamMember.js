@@ -7,13 +7,13 @@ const TeamMember = ({ Name, Role, Linkedin, Github, image }) => {
         <img
           class="mx-auto mb-4 w-36 h-36 rounded-full"
           src={image}
-          alt="Bonnie Avatar"
+          alt="User Avatar"
         />
         <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
           <a href="#">{Name}</a>
         </h3>
         <p>{Role}</p>
-        <ul class="flex justify-center mt-4 space-x-4">
+        <ul class="flex justify-center mt-4 space-x-1">
           <li>
             <a
               target="_blank"

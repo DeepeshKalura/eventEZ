@@ -16,8 +16,8 @@ const About = () => {
         />
       </div>
       <div className="about-section-text-container">
-        <p className="primary-subheading">About</p>
-        <h1 className="primary-heading">EventPlanner</h1>
+        <p className="primary-heading">About</p>
+        <h1 className="primary-heading text-2xl">EventEZ</h1>
         <p className="primary-text">
           To enhance the Tri-Valley's official website and boost local business
           tourism, our mission is to address existing technology limitations by

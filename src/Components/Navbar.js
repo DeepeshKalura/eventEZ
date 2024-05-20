@@ -16,7 +16,7 @@ import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import LuggageIcon from "@mui/icons-material/Luggage";
 import { Link } from "react-router-dom";
-import logo from "../Assets/tryvalleylogo.png"
+import logo from "../Assets/tryvalleylogo.png";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -34,31 +34,30 @@ const Navbar = () => {
       text: "Testimonials",
       icon: <CommentRoundedIcon />,
     },
-   
+
     {
       text: "Contact",
       icon: <PhoneRoundedIcon />,
     },
   ];
   return (
-    <nav className="w-full  border border-gray-200  py-4 z-50">
+    <nav className="w-full  border bg-[#23f2dd85] border-gray-200  py-4 z-50">
       <div className="nav-logo-container w-16 mx-8 text-8xl">
         <img src={logo} alt="" />
       </div>
       <div className="navbar-links-container">
         <ul className="flex flex-wrap  items-center ">
           <li>
-            <Link 
-            to="/" >Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-          <a href="#about">About</a>
+            <a href="#about">About</a>
           </li>
 
           <li>
-           <a href="#our-team">Our Team</a>
+            <a href="#our-team">Team</a>
           </li>
-         
+
           <li>
             <Link to="/events">
               <button className="primary-button">Go to Events</button>

@@ -18,11 +18,13 @@ const Event = ({ props }) => {
   console.log(props);
 
   return (
-    <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:mx-16 my-6`}>
+    <div
+      className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:mx-16 my-6`}
+    >
       {props.map((event) => (
         <div
           key={event.id}
-          className="max-w-sm border border-gray-200 rounded-lg shadow relative transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#F6E2C0] hover:cursor-pointer"
+          className="max-w-sm border border-gray-200 rounded-lg shadow relative transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#23f2dd85] hover:cursor-pointer"
         >
           <Link to={"/events/" + event.id}>
             <div>

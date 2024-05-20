@@ -16,7 +16,7 @@ const EventCoverCard = ({ events, eventId }) => {
         <div className="flex justify-center relative z-10 bg-white sm:mx-16 sm:mt-3 sm:mb-6 rounded-xl">
           <div className="hidden md:block w-1/2 bg-white my-4 ml-4 rounded-l-xl">
             <div className="h-1/2">
-              <h1 className=" text-2xl font-extrabold">
+              <h1 className=" text-3xl font-extrabold pt-4">
                 {events[eventId - 1].name}
               </h1>
             </div>

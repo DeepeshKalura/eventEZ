@@ -1,14 +1,14 @@
 import React from "react";
 import TeamMember from "./TeamMember";
 import deepesh from "../Assets/TeamMemberPhotos/deepesh.jpg";
-import priyansu from "../Assets/TeamMemberPhotos/priyansu.png";
+import priyansu from "../Assets/TeamMemberPhotos/priyansu.jpg";
 import soniya from "../Assets/TeamMemberPhotos/Soniya.png";
 
 const OurTeam = () => {
   return (
     <div>
       <section className="" id="our-team">
-        <div className="flex justify-between py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6"></div>
+        <div className="flex justify-between py-8 pl-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6"></div>
         <div className="mx-auto mb-12 max-w-screen-sm lg:mb-16">
           <h2 className="primary-heading ">Our team</h2>
           <p className="primary-text ">Meet Our Team Members</p>
@@ -21,9 +21,10 @@ const OurTeam = () => {
               image={deepesh}
             />
             <TeamMember
-              Name="Priyansu Kumar"
+              Name="Priyansu Mohanty"
               Role="Frontend Developer"
               Github="https://github.com/Priyansu-17"
+              Linkedin="https://www.linkedin.com/in/priyansu-mohanty-105551237/"
               image={priyansu}
             />
             <TeamMember
