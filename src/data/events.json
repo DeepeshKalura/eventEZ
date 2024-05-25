@@ -1,6 +1,68 @@
 [
   {
     "id": 1,
+    "name": "Live Music with Richlybent!",
+    "host": "Rosa Fierro Cellars",
+    "address": "Rosa Fierro Cellars",
+    "description": "Bring your dancin' shoes and join us for wine and live music with Richlybent singing R&B & Motown! Wines will be available by the glass and bottle and Fijian BBQ Food available for purchase. Open seating available. No outside alcohol.",
+    "image": "/images/event7.jpg",
+    "timeline": {
+      "start": "May 25, 2024 17:30",
+      "end": "May 25, 2024 20:30"
+    },
+    "event_type": ["CONCERTS & PERFORMANCES", "Food Drinks", "Winery"],
+    "audience": ["Adults", "Young Adults"],
+    "topic": ["MUSIC", "FOOD & DRINK"],
+    "website": " http://www.rosafierrocellars.com/events",
+    "price": "FREE"
+  },
+  {
+    "id": 2,
+    "name": "Live Music at Wood Family Vineyards",
+    "host": "Wood Family Vineyards",
+    "address": "1828 Wetmore Road, Livermore, CA 94550",
+    "description": "Music is from 6pm-8:30pm  Wine by the bottle and glassFull food menu Preferred seating reservations offered through website",
+    "image": "/images/event8.jpg",
+    "timeline": {
+      "start": "May 13, 2024 17:30",
+      "end": "May 13, 2024 20:30"
+    },
+    "event_type": [
+      "CONCERTS & PERFORMANCES",
+      "Live Music",
+      "Food Drinks",
+      "Winery"
+    ],
+    "audience": ["Adults", "Young Adults"],
+    "topic": ["MUSIC", "FOOD & DRINK"],
+    "website": "https://www.laspositasvineyards.com/2023-evening-in-the-vineyards",
+    "price": "FREE"
+  },
+
+  {
+    "id": 3,
+    "name": "Holy McGrail Quarterly Wine Club Release Party",
+    "host": "Livermore Valley Wine Community",
+    "address": "5600 Greenville Rd., Livermore, CA 94550",
+    "description": "Join us for a beautiful summer weekend on the Front Lawn at McGrail to toast to the season and unveil our newest release wines! Indulge your senses as you sip and savor our 2023 Peyton Paige Sauvignon Blanc, 2022 Malbec, 2021 Clone 30 Cabernet Sauvignon, and 2018 Graduate Cabernet Sauvignon.",
+    "image": "/images/event9.jpg",
+    "timeline": {
+      "start": "May 25, 2024 11:00 AM",
+      "end": "May 25, 2024 4:00 PM"
+    },
+    "event_type": [
+      "CONCERTS & PERFORMANCES",
+      "LIVE MUSIC",
+      "FOOD TRUCKS",
+      "WINERY"
+    ],
+    "audience": ["18+", "21+", "FAMILY-FRIENDLY"],
+    "topic": ["ARTS & CULTURE", "FOOD & DRINK"],
+    "website": "https://www.exploretock.com/mcgrailvineyardsandwinery/event/471840/holy-mcgrail-quarterly-wine-club-release-party-may-2024",
+    "price": "Wine Club Members receive up to four complimentary tickets per membership. Guests are $25/person. Guests under 21 years of age or Non-Drinkers are $5/person."
+  },
+  {
+    "id": 4,
     "name": "Imagination Expressed 2024",
     "host": "Museum on Main",
     "address": "603 Main Street, Pleasanton, CA 94566",
@@ -18,7 +80,7 @@
   },
 
   {
-    "id": 2,
+    "id": 5,
     "name": "Winnie the Pooh KIDS",
     "host": "Amador Theater",
     "address": "1155 Santa Rita Rd., Pleasanton, CA 94566",
@@ -36,7 +98,7 @@
   },
 
   {
-    "id": 3,
+    "id": 6,
     "name": "Live Music at Dust Bowl Brewing Co",
     "host": "Dust Bowl Brewing Co",
     "address": "3034 W. Jack London Blvd. Livermore, CA 94551",
@@ -61,7 +123,7 @@
   },
 
   {
-    "id": 4,
+    "id": 7,
     "name": "Mother’s Day Wine, Brunch & Bouquets!",
     "host": "Livermore Valley Wine Community",
     "address": "29 S. Livermore Ave., Livermore, CA 94550",
@@ -79,7 +141,7 @@
   },
 
   {
-    "id": 5,
+    "id": 8,
     "name": "Tacos & Trivia at BottleTaps",
     "host": "BottleTaps",
     "address": "3020 Bernal Ave. Suite 160, Pleasanton, CA",
@@ -97,7 +159,7 @@
   },
 
   {
-    "id": 6,
+    "id": 9,
     "name": "Acoustic Wednesday",
     "host": "Wood Family Vineyards",
     "address": "2407 Research Drive, Livermore",
